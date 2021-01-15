@@ -16,11 +16,14 @@ console.log(scoreText)
 
 // tip calculator 
 let getTip = function (total, tipPercent = .2) { 
-    return total * tipPercent
+    percent = tipPercent * 100
+    let tip = total * tipPercent
+    return `A ${percent}% on $${total} would be ${tip}`
 }
 
 let tip = getTip(40, 0.25)
 console.log(tip)
 
-let otherTip = getTip(100)
-console.log(otherTip)
+//Template Strings 
+let name = "chloe"
+console.log(`My name is ${name}`)
