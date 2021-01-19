@@ -10,3 +10,14 @@ console.log(todos.shift())
 // console.log(`Todo: ${todos[0]}`)
 // console.log(`Todo: ${todos[todos.length - 1]}`)
 console.log(todos)
+
+todos.forEach(function (item, index) {
+    const num = index + 1
+    console.log(`${num}. ${item}`)
+})
+
+for ( let count = 0; count < todos.length; count ++ ) {
+    const num = count + 1
+    const todo = todos[count]
+    console.log(`${num}. ${todo}`)
+}

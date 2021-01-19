@@ -12,7 +12,19 @@ const notes = ['Note 1', 'Note 2', 'Note 3']
 
 notes[2] = 'This is the new note 3'
 
+notes.forEach(function (item) {  // callback function = a function is passed to another function
+    console.log(item)
+})
 console.log(notes.length)
 // console.log(notes[notes.length - 1])
 
 console.log(notes)
+
+//counting 
+for (let count = 2; count >= 0; count --) {
+    console.log(count)
+}
+
+for (let count = notes.length - 1; count >=0 ; count --) {
+    console.log(notes[count])
+}
